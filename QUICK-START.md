@@ -57,6 +57,11 @@ $(urlfetch YOUR-NGROK-URL/quest/$(querystring)?api_key=REDACTED_API_KEY)
 $(urlfetch YOUR-NGROK-URL/item/$(querystring)?api_key=REDACTED_API_KEY)
 ```
 
+### !arcblueprint
+```
+$(urlfetch YOUR-NGROK-URL/blueprint/$(querystring)?api_key=REDACTED_API_KEY)
+```
+
 ### !events
 ```
 $(urlfetch YOUR-NGROK-URL/events?api_key=REDACTED_API_KEY)
