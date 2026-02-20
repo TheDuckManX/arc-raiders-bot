@@ -508,8 +508,8 @@ app.get('/arc/:name', authenticateAPIKey, validateInput, async (req, res) => {
 
     let details = `${arc.name || 'Unknown ARC'}`;
 
-    // Look up loot by name (keyed by lowercase name in arc_loot.json)
-    const lootInfo = arcLootData[arc.name?.toLowerCase()];
+    // Look up loot by API id (keyed by arc.id in arc_loot.json, e.g. "bison" for Leaper)
+    const lootInfo = arcLootData[arc.id];
     if (lootInfo && lootInfo.loot && lootInfo.loot.length > 0) {
       const notableLoot = lootInfo.loot.filter(item =>
         item.rarity === 'Epic' || item.rarity === 'Legendary'
