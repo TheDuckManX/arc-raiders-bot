@@ -52,7 +52,12 @@ $(urlfetch https://YOUR_RAILWAY_URL/events?api_key=REDACTED_API_KEY)
 
 ### !arcblueprint
 ```
-$(urlfetch https://YOUR_RAILWAY_URL/blueprint/$(querystring)?api_key=REDACTED_API_KEY)
+$(urlfetch https://YOUR_RAILWAY_URL/blueprint/$(querystring)?api_key=YOUR_API_KEY)
+```
+
+### !trials
+```
+$(urlfetch https://arc-raiders-bot-production-8101.up.railway.app/trials?api_key=YOUR_API_KEY)
 ```
 
 ---

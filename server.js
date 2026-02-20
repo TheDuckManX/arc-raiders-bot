@@ -135,9 +135,63 @@ app.get('/', (req, res) => {
       '/events': 'Get upcoming events schedule',
       '/maps': 'List all available maps',
       '/map/:name': 'Get interactive map link',
+      '/trials': 'Active weekly trials and time remaining',
       '/health': 'Health check'
     }
   });
+});
+
+// Active weekly trials
+app.get('/trials', authenticateAPIKey, async (req, res) => {
+  try {
+    // Fetch full response (not unwrapped) so we get activeWindowEnd for time remaining
+    const cacheKey = 'weekly-trials-full';
+    let payload = cache.get(cacheKey);
+
+    if (!payload) {
+      const controller = new AbortController();
+      const timer = setTimeout(() => controller.abort(), FETCH_TIMEOUT_MS);
+      try {
+        const response = await fetch(`${BASE_URL}/weekly-trials`, { signal: controller.signal });
+        if (!response.ok) throw new Error(`API returned ${response.status}`);
+        payload = await response.json();
+        cache.set(cacheKey, payload);
+      } finally {
+        clearTimeout(timer);
+      }
+    }
+
+    const trials = payload.data || [];
+    const active = trials.filter(t => t.is_active);
+
+    if (active.length === 0) {
+      return res.type('text').send('No active weekly trials right now. Check back later! | metaforge.app/arc-raiders/weekly-trials');
+    }
+
+    // Calculate time remaining from activeWindowEnd (Unix seconds)
+    let timeStr = '';
+    if (payload.activeWindowEnd) {
+      const msLeft = (payload.activeWindowEnd * 1000) - Date.now();
+      if (msLeft > 0) {
+        const totalMins = Math.floor(msLeft / 60000);
+        const days = Math.floor(totalMins / 1440);
+        const hours = Math.floor((totalMins % 1440) / 60);
+        const mins = totalMins % 60;
+        const parts = [];
+        if (days > 0) parts.push(`${days}d`);
+        if (hours > 0) parts.push(`${hours}h`);
+        if (mins > 0) parts.push(`${mins}m`);
+        timeStr = parts.length > 0 ? ` (resets in ${parts.join(' ')})` : '';
+      } else {
+        timeStr = ' (resetting soon)';
+      }
+    }
+
+    const trialNames = active.map(t => t.name).join(' | ');
+    res.type('text').send(`Active Weekly Trials${timeStr}: ${trialNames} | metaforge.app/arc-raiders/weekly-trials`);
+  } catch (error) {
+    res.status(500).type('text').send('Error fetching weekly trials. Please try again later.');
+  }
 });
 
 // Health check endpoint (no auth required)
