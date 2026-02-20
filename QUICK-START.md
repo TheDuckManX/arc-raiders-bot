@@ -8,7 +8,7 @@ REDACTED_API_KEY
 
 ## Railway URL
 ```
-https://YOUR_RAILWAY_URL
+https://arc-raiders-bot-production-8101.up.railway.app
 ```
 
 ---
