@@ -1,0 +1,119 @@
+{
+  "wasp": {
+    "loot": [
+      { "item": "ARC Carapace", "rarity": "Common" },
+      { "item": "ARC Fluid", "rarity": "Common" },
+      { "item": "Wasp Wing Fragment", "rarity": "Uncommon" }
+    ]
+  },
+  "hornet": {
+    "loot": [
+      { "item": "ARC Carapace", "rarity": "Common" },
+      { "item": "ARC Fluid", "rarity": "Common" },
+      { "item": "Hornet Stinger", "rarity": "Uncommon" }
+    ]
+  },
+  "leaper": {
+    "loot": [
+      { "item": "ARC Carapace", "rarity": "Common" },
+      { "item": "ARC Fluid", "rarity": "Common" },
+      { "item": "Leaper Leg", "rarity": "Uncommon" }
+    ]
+  },
+  "queen": {
+    "loot": [
+      { "item": "Queen Core", "rarity": "Legendary" },
+      { "item": "ARC Royal Jelly", "rarity": "Epic" },
+      { "item": "ARC Carapace", "rarity": "Common" },
+      { "item": "ARC Fluid", "rarity": "Common" }
+    ]
+  },
+  "crawler": {
+    "loot": [
+      { "item": "ARC Carapace", "rarity": "Common" },
+      { "item": "ARC Fluid", "rarity": "Common" },
+      { "item": "Crawler Shell", "rarity": "Uncommon" }
+    ]
+  },
+  "sentinel": {
+    "loot": [
+      { "item": "ARC Sensor Array", "rarity": "Epic" },
+      { "item": "ARC Carapace", "rarity": "Common" },
+      { "item": "ARC Fluid", "rarity": "Uncommon" }
+    ]
+  },
+  "brute": {
+    "loot": [
+      { "item": "ARC Brute Hide", "rarity": "Epic" },
+      { "item": "ARC Carapace", "rarity": "Common" },
+      { "item": "ARC Fluid", "rarity": "Common" }
+    ]
+  },
+  "stalker": {
+    "loot": [
+      { "item": "Stalker Claw", "rarity": "Uncommon" },
+      { "item": "ARC Carapace", "rarity": "Common" },
+      { "item": "ARC Fluid", "rarity": "Common" }
+    ]
+  },
+  "drone": {
+    "loot": [
+      { "item": "ARC Drone Core", "rarity": "Uncommon" },
+      { "item": "ARC Fluid", "rarity": "Common" }
+    ]
+  },
+  "spitter": {
+    "loot": [
+      { "item": "Spitter Gland", "rarity": "Uncommon" },
+      { "item": "ARC Fluid", "rarity": "Common" },
+      { "item": "ARC Carapace", "rarity": "Common" }
+    ]
+  },
+  "charger": {
+    "loot": [
+      { "item": "Charger Horn", "rarity": "Epic" },
+      { "item": "ARC Carapace", "rarity": "Common" },
+      { "item": "ARC Fluid", "rarity": "Common" }
+    ]
+  },
+  "shrieker": {
+    "loot": [
+      { "item": "Shrieker Membrane", "rarity": "Uncommon" },
+      { "item": "ARC Fluid", "rarity": "Common" }
+    ]
+  },
+  "guardian": {
+    "loot": [
+      { "item": "Guardian Core", "rarity": "Epic" },
+      { "item": "ARC Carapace", "rarity": "Uncommon" },
+      { "item": "ARC Fluid", "rarity": "Common" }
+    ]
+  },
+  "titan": {
+    "loot": [
+      { "item": "Titan Core", "rarity": "Legendary" },
+      { "item": "Titan Plating", "rarity": "Epic" },
+      { "item": "ARC Carapace", "rarity": "Common" }
+    ]
+  },
+  "runner": {
+    "loot": [
+      { "item": "ARC Carapace", "rarity": "Common" },
+      { "item": "ARC Fluid", "rarity": "Common" }
+    ]
+  },
+  "hive": {
+    "loot": [
+      { "item": "Hive Node", "rarity": "Epic" },
+      { "item": "ARC Royal Jelly", "rarity": "Uncommon" },
+      { "item": "ARC Fluid", "rarity": "Common" }
+    ]
+  },
+  "wraith": {
+    "loot": [
+      { "item": "Wraith Essence", "rarity": "Legendary" },
+      { "item": "ARC Fluid", "rarity": "Uncommon" },
+      { "item": "ARC Carapace", "rarity": "Common" }
+    ]
+  }
+}
