@@ -42,7 +42,11 @@
     "loot": [
       {"item": "Comet Igniter", "rarity": "Rare"},
       {"item": "ARC Alloy", "rarity": "Uncommon"},
-      {"item": "ARC Synthetic Resin", "rarity": "Rare"}
+      {"item": "Crude Explosives", "rarity": "Uncommon"},
+      {"item": "Advanced ARC Powercell", "rarity": "Rare"},
+      {"item": "Explosive Compound", "rarity": "Rare"},
+      {"item": "ARC Coolant", "rarity": "Rare"},
+      {"item": "ARC Thermo Lining", "rarity": "Rare"}
     ]
   },
   "fireball": {
