@@ -2,7 +2,7 @@
 
 ## Your API Key
 ```
-REDACTED_API_KEY
+1ba020fc09eff2beb393dc53bc27652049fedb6ba17f29ee25be5d73d0147b95
 ```
 ⚠️ **Keep this secret!**
 
@@ -17,47 +17,47 @@ https://arc-raiders-bot-production-8101.up.railway.app
 
 ### !quests
 ```
-$(urlfetch https://YOUR_RAILWAY_URL/quests?api_key=REDACTED_API_KEY)
+$(urlfetch https://arc-raiders-bot-production-8101.up.railway.app/quests?api_key=1ba020fc09eff2beb393dc53bc27652049fedb6ba17f29ee25be5d73d0147b95)
 ```
 
 ### !quest
 ```
-$(urlfetch https://YOUR_RAILWAY_URL/quest/$(querystring)?api_key=REDACTED_API_KEY)
+$(urlfetch https://arc-raiders-bot-production-8101.up.railway.app/quest/$(querystring)?api_key=1ba020fc09eff2beb393dc53bc27652049fedb6ba17f29ee25be5d73d0147b95)
 ```
 
 ### !item
 ```
-$(urlfetch https://YOUR_RAILWAY_URL/item/$(querystring)?api_key=REDACTED_API_KEY)
+$(urlfetch https://arc-raiders-bot-production-8101.up.railway.app/item/$(querystring)?api_key=1ba020fc09eff2beb393dc53bc27652049fedb6ba17f29ee25be5d73d0147b95)
 ```
 
 ### !arc
 ```
-$(urlfetch https://YOUR_RAILWAY_URL/arc/$(querystring)?api_key=REDACTED_API_KEY)
+$(urlfetch https://arc-raiders-bot-production-8101.up.railway.app/arc/$(querystring)?api_key=1ba020fc09eff2beb393dc53bc27652049fedb6ba17f29ee25be5d73d0147b95)
 ```
 
 ### !map
 ```
-$(urlfetch https://YOUR_RAILWAY_URL/map/$(querystring)?api_key=REDACTED_API_KEY)
+$(urlfetch https://arc-raiders-bot-production-8101.up.railway.app/map/$(querystring)?api_key=1ba020fc09eff2beb393dc53bc27652049fedb6ba17f29ee25be5d73d0147b95)
 ```
 
 ### !maps
 ```
-$(urlfetch https://YOUR_RAILWAY_URL/maps?api_key=REDACTED_API_KEY)
+$(urlfetch https://arc-raiders-bot-production-8101.up.railway.app/maps?api_key=1ba020fc09eff2beb393dc53bc27652049fedb6ba17f29ee25be5d73d0147b95)
 ```
 
 ### !events
 ```
-$(urlfetch https://YOUR_RAILWAY_URL/events?api_key=REDACTED_API_KEY)
+$(urlfetch https://arc-raiders-bot-production-8101.up.railway.app/events?api_key=1ba020fc09eff2beb393dc53bc27652049fedb6ba17f29ee25be5d73d0147b95)
 ```
 
 ### !arcblueprint
 ```
-$(urlfetch https://YOUR_RAILWAY_URL/blueprint/$(querystring)?api_key=YOUR_API_KEY)
+$(urlfetch https://arc-raiders-bot-production-8101.up.railway.app/blueprint/$(querystring)?api_key=1ba020fc09eff2beb393dc53bc27652049fedb6ba17f29ee25be5d73d0147b95)
 ```
 
 ### !trials
 ```
-$(urlfetch https://arc-raiders-bot-production-8101.up.railway.app/trials?api_key=YOUR_API_KEY)
+$(urlfetch https://arc-raiders-bot-production-8101.up.railway.app/trials?api_key=1ba020fc09eff2beb393dc53bc27652049fedb6ba17f29ee25be5d73d0147b95)
 ```
 
 ---
@@ -66,7 +66,7 @@ $(urlfetch https://arc-raiders-bot-production-8101.up.railway.app/trials?api_key
 
 Test in your browser:
 ```
-https://YOUR_RAILWAY_URL/health
+https://arc-raiders-bot-production-8101.up.railway.app/health
 ```
 
 Should return `{"status":"ok"}`
