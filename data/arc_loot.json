@@ -1,53 +1,197 @@
 {
-  "wasp": {
-    "loot": []
-  },
-  "hornet": {
-    "loot": []
+  "bastion": {
+    "loot": [
+      {"item": "ARC Alloy", "rarity": "Uncommon"},
+      {"item": "ARC Powercell", "rarity": "Common"},
+      {"item": "ARC Motion Core", "rarity": "Rare"},
+      {"item": "ARC Circuitry", "rarity": "Rare"},
+      {"item": "Bastion Cell", "rarity": "Epic"},
+      {"item": "Advanced ARC Powercell", "rarity": "Rare"},
+      {"item": "Mechanical Components", "rarity": "Uncommon"},
+      {"item": "Medium Gun Parts", "rarity": "Rare"},
+      {"item": "Medium Ammo", "rarity": "Common"}
+    ]
   },
   "bison": {
-    "loot": []
-  },
-  "queen": {
-    "loot": []
-  },
-  "matriarch": {
-    "loot": []
-  },
-  "bastion": {
-    "loot": []
+    "loot": [
+      {"item": "ARC Alloy", "rarity": "Uncommon"},
+      {"item": "ARC Powercell", "rarity": "Common"},
+      {"item": "ARC Motion Core", "rarity": "Rare"},
+      {"item": "ARC Circuitry", "rarity": "Rare"},
+      {"item": "Advanced ARC Powercell", "rarity": "Rare"},
+      {"item": "Leaper Pulse Unit", "rarity": "Epic"},
+      {"item": "ARC Flex Rubber", "rarity": "Rare"},
+      {"item": "ARC Performance Steel", "rarity": "Rare"},
+      {"item": "Explosive Compound", "rarity": "Rare"},
+      {"item": "Mechanical Components", "rarity": "Uncommon"}
+    ]
   },
   "bombardier": {
-    "loot": []
+    "loot": [
+      {"item": "ARC Alloy", "rarity": "Uncommon"},
+      {"item": "ARC Powercell", "rarity": "Common"},
+      {"item": "ARC Performance Steel", "rarity": "Rare"},
+      {"item": "Advanced ARC Powercell", "rarity": "Rare"},
+      {"item": "Mechanical Components", "rarity": "Uncommon"},
+      {"item": "Medium Gun Parts", "rarity": "Rare"},
+      {"item": "Bombardier Cell", "rarity": "Epic"},
+      {"item": "Launcher Ammo", "rarity": "Rare"}
+    ]
+  },
+  "comet": {
+    "loot": [
+      {"item": "Comet Igniter", "rarity": "Rare"},
+      {"item": "ARC Alloy", "rarity": "Uncommon"},
+      {"item": "ARC Synthetic Resin", "rarity": "Rare"}
+    ]
   },
   "fireball": {
-    "loot": []
+    "loot": [
+      {"item": "ARC Alloy", "rarity": "Uncommon"},
+      {"item": "ARC Powercell", "rarity": "Common"},
+      {"item": "Fireball Burner", "rarity": "Uncommon"},
+      {"item": "Crude Explosives", "rarity": "Uncommon"}
+    ]
+  },
+  "firefly": {
+    "loot": [
+      {"item": "Firefly Burner", "rarity": "Rare"},
+      {"item": "ARC Alloy", "rarity": "Uncommon"},
+      {"item": "ARC Powercell", "rarity": "Common"}
+    ]
+  },
+  "hornet": {
+    "loot": [
+      {"item": "ARC Alloy", "rarity": "Uncommon"},
+      {"item": "ARC Powercell", "rarity": "Common"},
+      {"item": "Hornet Driver", "rarity": "Rare"},
+      {"item": "Medium Ammo", "rarity": "Common"},
+      {"item": "Simple Gun Parts", "rarity": "Uncommon"}
+    ]
+  },
+  "matriarch": {
+    "loot": [
+      {"item": "Matriarch Reactor", "rarity": "Legendary"},
+      {"item": "ARC Alloy", "rarity": "Uncommon"},
+      {"item": "ARC Circuitry", "rarity": "Rare"},
+      {"item": "ARC Performance Steel", "rarity": "Rare"},
+      {"item": "Advanced ARC Powercell", "rarity": "Rare"},
+      {"item": "ARC Flex Rubber", "rarity": "Rare"},
+      {"item": "ARC Motion Core", "rarity": "Rare"},
+      {"item": "ARC Synthetic Resin", "rarity": "Rare"},
+      {"item": "ARC Thermo Lining", "rarity": "Rare"},
+      {"item": "Magnetic Accelerator", "rarity": "Epic"},
+      {"item": "Aphelion Rifle Blueprint", "rarity": "Legendary"}
+    ]
   },
   "pop": {
-    "loot": []
+    "loot": [
+      {"item": "ARC Alloy", "rarity": "Uncommon"},
+      {"item": "ARC Powercell", "rarity": "Common"},
+      {"item": "ARC Thermo Lining", "rarity": "Rare"},
+      {"item": "Crude Explosives", "rarity": "Uncommon"},
+      {"item": "Pop Trigger", "rarity": "Uncommon"}
+    ]
+  },
+  "queen": {
+    "loot": [
+      {"item": "ARC Alloy", "rarity": "Uncommon"},
+      {"item": "ARC Motion Core", "rarity": "Rare"},
+      {"item": "ARC Circuitry", "rarity": "Rare"},
+      {"item": "Advanced Mechanical Components", "rarity": "Rare"},
+      {"item": "Advanced Electrical Components", "rarity": "Rare"},
+      {"item": "Advanced ARC Powercell", "rarity": "Rare"},
+      {"item": "Queen Reactor", "rarity": "Legendary"},
+      {"item": "ARC Coolant", "rarity": "Rare"},
+      {"item": "ARC Flex Rubber", "rarity": "Rare"},
+      {"item": "ARC Thermo Lining", "rarity": "Rare"},
+      {"item": "ARC Synthetic Resin", "rarity": "Rare"},
+      {"item": "ARC Performance Steel", "rarity": "Rare"},
+      {"item": "Magnetic Accelerator", "rarity": "Epic"}
+    ]
   },
   "rocketeer": {
-    "loot": []
-  },
-  "sentinel": {
-    "loot": []
-  },
-  "shredder": {
-    "loot": []
-  },
-  "snitch": {
-    "loot": []
-  },
-  "spotter": {
-    "loot": []
+    "loot": [
+      {"item": "ARC Alloy", "rarity": "Uncommon"},
+      {"item": "ARC Powercell", "rarity": "Common"},
+      {"item": "ARC Motion Core", "rarity": "Rare"},
+      {"item": "ARC Circuitry", "rarity": "Rare"},
+      {"item": "Rocketeer Driver", "rarity": "Epic"},
+      {"item": "Heavy Ammo", "rarity": "Common"},
+      {"item": "Advanced ARC Powercell", "rarity": "Rare"},
+      {"item": "Heavy Gun Parts", "rarity": "Rare"}
+    ]
   },
   "rollbot": {
-    "loot": []
+    "loot": [
+      {"item": "ARC Alloy", "rarity": "Uncommon"},
+      {"item": "ARC Powercell", "rarity": "Common"},
+      {"item": "ARC Motion Core", "rarity": "Rare"},
+      {"item": "ARC Circuitry", "rarity": "Rare"},
+      {"item": "Advanced ARC Powercell", "rarity": "Rare"},
+      {"item": "Sensors", "rarity": "Rare"},
+      {"item": "Surveyor Vault", "rarity": "Rare"},
+      {"item": "Vita Spray Blueprint", "rarity": "Legendary"},
+      {"item": "Barricade Kit Blueprint", "rarity": "Legendary"},
+      {"item": "Extended Medium Mag III Blueprint", "rarity": "Legendary"}
+    ]
+  },
+  "sentinel": {
+    "loot": [
+      {"item": "ARC Alloy", "rarity": "Uncommon"},
+      {"item": "ARC Coolant", "rarity": "Rare"},
+      {"item": "ARC Synthetic Resin", "rarity": "Rare"},
+      {"item": "ARC Thermo Lining", "rarity": "Rare"},
+      {"item": "ARC Motion Core", "rarity": "Rare"},
+      {"item": "Sentinel Firing Core", "rarity": "Rare"},
+      {"item": "Advanced ARC Powercell", "rarity": "Rare"},
+      {"item": "Heavy Ammo", "rarity": "Common"}
+    ]
+  },
+  "shredder": {
+    "loot": [
+      {"item": "Shotgun Ammo", "rarity": "Common"},
+      {"item": "Shredder Gyro", "rarity": "Rare"},
+      {"item": "ARC Powercell", "rarity": "Common"},
+      {"item": "ARC Alloy", "rarity": "Uncommon"},
+      {"item": "Simple Gun Parts", "rarity": "Uncommon"}
+    ]
+  },
+  "snitch": {
+    "loot": [
+      {"item": "ARC Alloy", "rarity": "Uncommon"},
+      {"item": "ARC Powercell", "rarity": "Common"},
+      {"item": "Snitch Scanner", "rarity": "Uncommon"},
+      {"item": "ARC Synthetic Resin", "rarity": "Rare"},
+      {"item": "Sensors", "rarity": "Rare"}
+    ]
+  },
+  "spotter": {
+    "loot": [
+      {"item": "Spotter Relay", "rarity": "Uncommon"},
+      {"item": "ARC Alloy", "rarity": "Uncommon"},
+      {"item": "ARC Powercell", "rarity": "Common"}
+    ]
   },
   "tick": {
-    "loot": []
+    "loot": [
+      {"item": "ARC Alloy", "rarity": "Uncommon"},
+      {"item": "Tick Pod", "rarity": "Uncommon"}
+    ]
   },
   "turret": {
-    "loot": []
+    "loot": [
+      {"item": "ARC Alloy", "rarity": "Uncommon"},
+      {"item": "Light Ammo", "rarity": "Common"},
+      {"item": "Simple Gun Parts", "rarity": "Uncommon"}
+    ]
+  },
+  "wasp": {
+    "loot": [
+      {"item": "Wasp Driver", "rarity": "Rare"},
+      {"item": "ARC Alloy", "rarity": "Uncommon"},
+      {"item": "ARC Powercell", "rarity": "Common"},
+      {"item": "Light Ammo", "rarity": "Common"}
+    ]
   }
 }
