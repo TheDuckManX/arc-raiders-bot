@@ -457,16 +457,32 @@ app.get('/quest/:name', authenticateAPIKey, validateInput, async (req, res) => {
 // Get all items
 app.get('/items', authenticateAPIKey, async (req, res) => {
   try {
-    const items = await fetchWithCache('/items', 'items');
+    const cacheKey = 'items-full';
+    let payload = cache.get(cacheKey);
 
-    if (!items || items.length === 0) {
+    if (!payload) {
+      const controller = new AbortController();
+      const timer = setTimeout(() => controller.abort(), FETCH_TIMEOUT_MS);
+      try {
+        const response = await fetch(`${BASE_URL}/items`, { signal: controller.signal });
+        if (!response.ok) throw new Error(`API returned ${response.status}`);
+        payload = await response.json();
+        cache.set(cacheKey, payload);
+      } finally {
+        clearTimeout(timer);
+      }
+    }
+
+    const items = payload.data || [];
+    const totalCount = payload.pagination?.total || items.length;
+
+    if (items.length === 0) {
       return res.type('text').send('No items found.');
     }
 
-    const itemCount = items.length;
     const itemNames = items.slice(0, 5).map(i => i.name || 'Unnamed').join(', ');
 
-    res.type('text').send(`Found ${itemCount} items. Examples: ${itemNames}... | Use !item <name> for details | Data from metaforge.app/arc-raiders`);
+    res.type('text').send(`Found ${totalCount} items. Examples: ${itemNames}... | Use !item <name> for details | Data from metaforge.app/arc-raiders`);
   } catch (error) {
     res.status(500).type('text').send('Error fetching items. Please try again later.');
   }
