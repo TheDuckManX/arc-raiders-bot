@@ -25,6 +25,11 @@ $(urlfetch https://arc-raiders-bot-production-8101.up.railway.app/quests?api_key
 $(urlfetch https://arc-raiders-bot-production-8101.up.railway.app/quest/$(querystring)?api_key=1ba020fc09eff2beb393dc53bc27652049fedb6ba17f29ee25be5d73d0147b95)
 ```
 
+### !items
+```
+$(urlfetch https://arc-raiders-bot-production-8101.up.railway.app/items?api_key=1ba020fc09eff2beb393dc53bc27652049fedb6ba17f29ee25be5d73d0147b95)
+```
+
 ### !item
 ```
 $(urlfetch https://arc-raiders-bot-production-8101.up.railway.app/item/$(querystring)?api_key=1ba020fc09eff2beb393dc53bc27652049fedb6ba17f29ee25be5d73d0147b95)

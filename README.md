@@ -11,6 +11,7 @@ Viewers type commands in Twitch chat (via [Fossabot](https://fossabot.com/)) and
 | `!arc <name>` | ARC enemy info and loot drops (e.g. `!arc wasp`) |
 | `!quest <name>` | Quest details, objectives, and rewards |
 | `!quests` | List all available quests |
+| `!items` | List all items in the database |
 | `!item <name>` | Item/weapon lookup |
 | `!map <name>` | Interactive map link (e.g. `!map dam`, `!map stella-top`) |
 | `!maps` | List all available maps |

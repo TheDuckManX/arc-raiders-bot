@@ -129,6 +129,7 @@ app.get('/', (req, res) => {
     endpoints: {
       '/quests': 'List all quests',
       '/quest/:name': 'Search for a quest by name',
+      '/items': 'List all items',
       '/item/:name': 'Search for an item/weapon by name',
       '/arc/:name': 'Search for an ARC enemy by name',
       '/blueprint/:name': 'Find where a blueprint is located',
@@ -453,9 +454,27 @@ app.get('/quest/:name', authenticateAPIKey, validateInput, async (req, res) => {
   }
 });
 
+// Get all items
+app.get('/items', authenticateAPIKey, async (req, res) => {
+  try {
+    const items = await fetchWithCache('/items', 'items');
+
+    if (!items || items.length === 0) {
+      return res.type('text').send('No items found.');
+    }
+
+    const itemCount = items.length;
+    const itemNames = items.slice(0, 5).map(i => i.name || 'Unnamed').join(', ');
+
+    res.type('text').send(`Found ${itemCount} items. Examples: ${itemNames}... | Use !item <name> for details | Data from metaforge.app/arc-raiders`);
+  } catch (error) {
+    res.status(500).type('text').send('Error fetching items. Please try again later.');
+  }
+});
+
 // Handle /item without a name
 app.get('/item', authenticateAPIKey, (req, res) => {
-  res.type('text').send('Please specify an item name. Usage: !item <name> | Example: !item rifle');
+  res.type('text').send('Please specify an item name. Usage: !item <name> | Example: !item rifle | Use !items to browse all items.');
 });
 
 // Get items endpoint - useful for weapon/gear lookups
